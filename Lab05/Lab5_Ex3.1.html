@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Giới thiệu cá nhân - Lab05</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Segoe UI', Arial, sans-serif;
+      line-height: 1.6;
+      background: #f5f7fa;
+      color: #333;
+    }
+    header {
+      background: #4a90e2;
+      color: #fff;
+      padding: 20px 0;
+      text-align: center;
+    }
+    header h1 {
+      margin-bottom: 10px;
+    }
+    nav {
+      margin-top: 10px;
+    }
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    .container {
+      max-width: 1000px;
+      margin: 20px auto;
+      padding: 0 20px;
+    }
+    section {
+      margin-bottom: 40px;
+    }
+    h2 {
+      color: #4a90e2;
+      margin-bottom: 15px;
+      border-bottom: 2px solid #4a90e2;
+      display: inline-block;
+      padding-bottom: 5px;
+    }
+    .intro p {
+      margin-bottom: 10px;
+    }
+    .products {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 20px;
+    }
+    .product {
+      background: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+    .product iframe, .product embed {
+      width: 100%;
+      border: none;
+      border-radius: 6px;
+    }
+    .product img {
+      max-width: 100%;
+      border-radius: 6px;
+      margin-bottom: 10px;
+    }
+    .product button {
+      background: #4a90e2;
+      color: #fff;
+      border: none;
+      padding: 10px 15px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    .product button:hover {
+      background: #357ab8;
+    }
+    footer {
+      background: #333;
+      color: #fff;
+      text-align: center;
+      padding: 15px 0;
+    }
+    @media (min-width: 768px) {
+      .products {
+        grid-template-columns: repeat(3, 1fr);
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Trang Giới thiệu Cá nhân</h1>
+    <nav>
+      <a href="#gioithieu">Giới thiệu</a>
+      <a href="#sanpham">Sản phẩm</a>
+      <a href="#lienhe">Liên hệ</a>
+    </nav>
+  </header>
+
+  <div class="container">
+    <!-- Giới thiệu -->
+    <section id="gioithieu" class="intro">
+      <h2>Giới thiệu</h2>
+      <p><strong>Họ tên:</strong> Đống Trần Như Ý</p>
+      <p><strong>Ngành học:</strong> Truyền thông đa phương tiện</p>
+      <p><strong>Trường/Lớp:</strong> Đại học Cần Thơ - Lớp DT26D1A1</p>
+      <p>Tôi là sinh viên yêu thích lập trình và thiết kế web. Tôi mong muốn phát triển các sản phẩm sáng tạo, hiện đại và hữu ích cho cộng đồng.</p>
+    </section>
+
+    <!-- Sản phẩm -->
+    <section id="sanpham">
+      <h2>Sản phẩm của tôi</h2>
+      <div class="products">
+        <!-- PDF -->
+        <div class="product">
+          <h3>Bài tập PDF</h3>
+<embed src="Lab05_Ex1.2.pdf" type="application/pdf" height="300px">
+          <br>
+          <button onclick="window.open('Lab05_Ex1.2.pdf')">Mở/Tải file PDF</button>
+        </div>
+
+        <!-- Infographic -->
+        <div class="product">
+          <h3>Infographic</h3>
+          <img src="Lab05_Ex2.1.png" alt="Infographic Lab05">
+          <p>Infographic minh họa nội dung bài tập Lab05.</p>
+        </div>
+
+        <!-- Video -->
+        <div class="product">
+          <h3>Video YouTube</h3>
+          <div style="position:relative;padding-bottom:56.25%;height:0;overflow:hidden;">
+            <iframe src="https://www.youtube.com/embed/Bm_pVUcdAE0" 
+                    title="Video Nhiệm vụ 2.2" 
+                    style="position:absolute;top:0;left:0;width:100%;height:100%;" 
+                    frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                    allowfullscreen>
+            </iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Liên hệ -->
+    <section id="lienhe">
+      <h2>Liên hệ</h2>
+      <p>Email: yB2605325@student.ctu.edu.vn</p>
+      <p>Điện thoại: 0395-399-089</p>
+    </section>
+  </div>
+
+  <footer>
+    <p>© 2026 Đống Trần Như Ý - Bản quyền thuộc về tác giả</p>
+  </footer>
+</body>
+</html>
